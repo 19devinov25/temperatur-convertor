@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="tempp.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="form-group">
+      <label for="temperature" style = "padding-top: 50px;">Temperature:</label>
+      <input type="text" id="temperature" name="temperature" required >
+    </div>
+    <div class="form-group" >
+      <label for="unit" style = "padding-top: 10px;">Unit:</label>
+      <select id="unit" name="unit" style="max-width: 400px; margin:2px; padding: 20px; background: #f4f7f8; border-radius: 5px;">
+        <option value="celsius" style = >Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div class = "form-results">
+    <button onclick="convertTemperature()">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="temppp.js"></script>
+</body>
+</html>
